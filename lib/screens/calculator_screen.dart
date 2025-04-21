@@ -1,3 +1,4 @@
+import 'package:calculator/widgets/display.dart';
 import 'package:flutter/material.dart';
 
 class CalculatorScreen extends StatelessWidget {
@@ -17,6 +18,15 @@ class CalculatorScreen extends StatelessWidget {
             fontSize: 30,
           ),
         ),
+      ),
+      body: Column(
+        children: [
+          //Output
+          Display(texto: '123123'),
+
+          //Input
+          Container(height: 500, child: Text('Keyboard')),
+        ],
       ),
     );
   }
